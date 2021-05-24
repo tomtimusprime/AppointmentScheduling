@@ -60,7 +60,7 @@ namespace AppointmentScheduling.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task <IActionResult> Register([FormBody]RegisterViewModel model)
+        public async Task <IActionResult> Register([FromBody]RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
